@@ -4,7 +4,7 @@ import os
 import io
 import pandas as pd
 
-sys.path.append("/Users/tharun/Documents/Personal/Coding")
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from my_app.classes.personal_finance_visualizer_class import MyData
 
