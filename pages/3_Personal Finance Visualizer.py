@@ -68,7 +68,10 @@ st.title("Expense Analysis App")
 
 uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
 
-with open("/Users/tharun/Documents/School/AP Comp Sci/Performance Task/sample_expenses_f.csv", "rb") as file:
+csv_file_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'sample_expenses_f.csv')
+
+
+with open(csv_file_path, "rb") as file:
     sample_csv = file.read()
 
 st.markdown("### Download Sample Data")

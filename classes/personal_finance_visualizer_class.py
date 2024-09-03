@@ -3,7 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import calendar
 
-# Define the MyData class
 class MyData:
     def __init__(self, sheet_id):
         self.df = pd.read_csv(sheet_id, parse_dates=['Date'])
