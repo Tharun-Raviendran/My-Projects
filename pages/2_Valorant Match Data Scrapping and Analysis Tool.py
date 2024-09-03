@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import os
 
 st.title("Valorant Match Data Processing and Prediction")
 
@@ -26,8 +27,8 @@ st.write(
     '''
 )
 try:
-    # Load the filtered data (assuming a CSV file or DataFrame object)
-    data = pd.read_csv('/Users/tharun/Documents/Personal/Coding/API Prac/americas_vlr_games_stats_rolling.csv')  # Adjust the path accordingly
+    csv_file_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'americas_vlr_games_stats_rolling.csv')
+    data = pd.read_csv(csv_file_path)  # Adjust the path accordingly
     data1 = data.iloc[:, 1:33]
     st.dataframe(data1)  
 except Exception as e:
