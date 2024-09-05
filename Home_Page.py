@@ -24,5 +24,5 @@ st.subheader("Get in Touch")
 st.write('''
 
 
-[GitHub](https://github.com/Tharun-Raviendran) | [Email](mailto:tharunraviendran@example.com)
+[Linkedin](https://www.linkedin.com/in/tharun-raviendran/) | [GitHub](https://github.com/Tharun-Raviendran) | [Email](mailto:tharunr@ad.unc.edu)
 ''')
